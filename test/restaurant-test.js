@@ -136,11 +136,11 @@ describe("restaurant.js", function() {
   });
 
   describe("removeMenuItem", function() {
-    it.skip("should be a function", function () {
+    it("should be a function", function () {
       assert.isFunction(removeMenuItem);
     });
 
-    it.skip("should remove an item from the menu to update it", function() {
+    it("should remove an item from the menu to update it", function() {
       var pizzaRestaurant = createRestaurant("Sexy Pizza");
       var bbqPizza = {
         name: "BBQ Chicken Pizza",
@@ -172,7 +172,7 @@ describe("restaurant.js", function() {
       assert.equal(result, "No one is eating our Bacon and Eggs Pizza - it has been removed from the breakfast menu!");
     });
 
-    it.skip("should remove a different item from the menu to update it", function () {
+    it("should remove a different item from the menu to update it", function () {
       var pizzaRestaurant = createRestaurant("Sexy Pizza");
       var bbqPizza = {
         name: "BBQ Chicken Pizza",
@@ -204,7 +204,7 @@ describe("restaurant.js", function() {
       assert.equal(result, "No one is eating our Veggie Pizza - it has been removed from the dinner menu!");
     });
 
-    it.skip("should only remove a menu item if it is on the menu", function() {
+    it("should only remove a menu item if it is on the menu", function() {
       var arepaRestaurant = createRestaurant("Quiero Arepas");
       var error1 = removeMenuItem(arepaRestaurant, "Mom's Spaghetti", "lunch");
       var error2 = removeMenuItem(arepaRestaurant, "Funfetti Cake", "breakfast");
@@ -215,7 +215,7 @@ describe("restaurant.js", function() {
   });
 
   describe('checkForFood', function() {
-    it.skip("should confirm if a requested item is on the menu", function() {
+    it("should confirm if a requested item is on the menu", function() {
       var restaurant = createRestaurant("Average Bakery");
   
       var foodItem1 = { 
@@ -240,7 +240,7 @@ describe("restaurant.js", function() {
       assert.equal(foodConfirmation2, "Yes, we're serving Cherry Danishes today!");
     });
   
-    it.skip("should confirm if a different requested item is on the menu", function () {
+    it("should confirm if a different requested item is on the menu", function () {
       var restaurant = createRestaurant("Five Star Bakery");
   
       var foodItem = {
@@ -256,7 +256,7 @@ describe("restaurant.js", function() {
       assert.equal(foodConfirmation, "Yes, we're serving Tart Tatin today!");
     });
   
-    it.skip("should confirm if a requested item is not on the menu", function () {
+    it("should confirm if a requested item is not on the menu", function () {
       var restaurant = createRestaurant("Best Bakery Ever");
   
       var foodItem = {
@@ -270,7 +270,7 @@ describe("restaurant.js", function() {
       assert.equal(foodConfirmation, "Sorry, we aren't serving Quiche today.");
     });
   
-    it.skip("should confirm if a different requested item is not on the menu", function () {
+    it("should confirm if a different requested item is not on the menu", function () {
       var restaurant = createRestaurant("Best Bakery Ever");
   
       var foodItem = {
