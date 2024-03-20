@@ -1,30 +1,21 @@
-# JS Fun at a Restaurant
+# JS Fun At A Restaurant
 
 ## Overview
+I had a great experience working on this project. As a Mod1 repeater, it felt much more comfortable the second time around. The foundational principles 
+and good habits in writing JavaScript functions have become much more solidified in my mind as a result. That being said, there were still a couple tricky 
+assertions that took me some time to pass. Overall, I felt this project helped me with my JavaScript foundations. 
 
-In front end web development, the programming language you will encounter most
-often is JavaScript. Soon, we'll also use HTML and CSS to help a user interact
-with our applications, however before we do that, we need to understand how to
-use JavaScript to handle the logic of our applications.
+## Instructions
+To open this application, complete the following steps:
+- Fork this repository to your GitHub profile
+- Clone it down to your machine
+- Open it in your text editor
 
-In this project, you'll be gaining experience working with variables, primitive
-data types, looping, arrays, and objects. As you work through the
-iterations, be sure to take time to stop and refactor you solutions. There is
-rarely one right way to solve a problem in programming, and part of your job
-will be evaulating the trade offs between different approaches to solving a
-problem.
+## Resources
+The following resources were used to complete the unit tests in this project: 
+- Mozilla Developer Network (MDN) JavaScript Guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+- Turing School of Software and Design Front End Lessons Page https://frontend.turing.edu/lessons/
+- ChatGPT https://chat.openai.com (I used this to confirm or disconfirm whether the path I was on was correct for my solutions. No copy/pasting took place in this project.)
 
-## Learning goals
-
-  - Understand what JavaScript primitives are, and how/when to use them
-  - Understand how to declare variables and assign data to them
-  - Practice using objects and arrays
-
-## Setup
-
-  - Fork this project to your own Github account
-  - clone the repository to your local machine
-  - `cd` into the project
-  - run `npm install` to install the necessary dependencies
-  
-  The project spec can be found [here](https://frontend.turing.edu/projects/module-1/restaurant.html).
+## Contributing
+All JavaScript code was written by Kyle Boomer for Turing Front End Software Program www.github.com/kylemboomer 
