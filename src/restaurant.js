@@ -10,23 +10,11 @@ return {
 }
 
 function addMenuItem(restaurant, item) {
-    if (item.type === 'lunch') {
-      var exists = restaurant.menus.lunch.some(existingItem => existingItem.name === item.name)
-      if(!exists) {
-         restaurant.menus.lunch.push(item)
-      }
-  } else if (item.type === 'breakfast') {
-    var exists = restaurant.menus.breakfast.some(existingItem => existingItem.name === item.name)
-    if (!exists) {
-    restaurant.menus.breakfast.push(item)
-    }
-  } else if (item.type === 'dinner') {
-    var exists = restaurant.menus.dinner.some(existingItem => existingItem.name === item.name)
-    if (!exists) {
-    restaurant.menus.dinner.push(item)
-    }
+if (!restaurant.menus[item.type].includes(item)) {
+  restaurant.menus[item.type].push(item)
   }
 }
+
 function removeMenuItem(restaurant, item, type) {
 if (!restaurant.menus[type].length) {
   return `Sorry, we don't sell ${item}, try adding a new recipe!`
