@@ -17,8 +17,7 @@ function listItems(array) {
   var list = [] 
   for (var i = 0; i < array.length; i++) {
     list.push(array[i].item)
-  }
- 
+  } 
 return list.join(', ')
 }
 
@@ -26,8 +25,7 @@ function searchOrder(array, item) {
   for (var i = 0; i < array.length; i++) {
     console.log(array[i].item)
       if (array[i].item === item){
-        return true
-      
+        return true      
         }
       }
       return false
